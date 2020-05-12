@@ -17,9 +17,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-
+        // obtendo localização do usuário baseado no IP
         getLocation()
+
     }
 
     fun getLocation() {
