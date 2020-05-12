@@ -68,20 +68,15 @@ class MainActivity : AppCompatActivity() {
                 response?.let {
 
                     if (it.code() == 200) {
-
                         temperatura.text = it.body().main.temp.toString()
-
                     }
 
                 }
 
-
             }
 
             override fun onFailure(call: Call<WeatherResponse>?, t: Throwable?) {
-
                 Toast.makeText(this@MainActivity, "Ops", Toast.LENGTH_LONG).show()
-
             }
 
         })
